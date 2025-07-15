@@ -31,23 +31,41 @@
             </ul>
         </nav>
         <!-- Header-->
-        <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">Chelsea Franzine C. Lauron</h1>
-                <h3 class="mb-5"><em>A Practical Showcase of IT Skills, Systems, and Projects</em></h3>
-            </div>
-            <section class="callout">
-            <div class="container px-4 px-lg-5 text-center">
-                <h2 class="mx-auto mb-5">
+        <header class="masthead bg-gradient-to-r from-blue-600 to-indigo-700 text-white min-h-[60vh] flex items-center">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight animate-fade-in">
+            Chelsea Franzine C. Lauron
+        </h1>
+        <h3 class="text-lg md:text-xl italic mb-8 opacity-90">
+            A Practical Showcase of IT Skills, Systems, and Projects
+        </h3>
+        <section class="callout py-12">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">
                     Application Materials
                 </h2>
-                <div class="d-flex justify-content-center gap-3">
-                  <a class="btn btn-primary btn-xl" href="assets/VITAE_LAURON.pdf">View my CV!</a>
-                  <a class="btn btn-primary btn-xl" href="assets/resume.pdf" target="_blank">View my Resume!</a>
+                <div class="flex justify-center gap-4">
+                    <a class="inline-block bg-white text-blue-600 font-medium px-6 py-3 rounded-lg shadow-md hover:bg-blue-100 transition-colors duration-300" href="assets/VITAE_LAURON.pdf">
+                        View my CV
+                    </a>
+                    <a class="inline-block bg-white text-blue-600 font-medium px-6 py-3 rounded-lg shadow-md hover:bg-blue-100 transition-colors duration-300" href="assets/resume.pdf" target="_blank">
+                        View my Resume
+                    </a>
                 </div>
             </div>
         </section>
-        </header>
+    </div>
+</header>
+
+<style>
+    @keyframes fade-in {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+        animation: fade-in 1s ease-out;
+    }
+</style>
         <!-- About-->
         <section class="content-section bg-light" id="about">
             <div class="container px-4 px-lg-5 text-center">
